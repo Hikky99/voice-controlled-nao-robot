@@ -26,7 +26,7 @@ def teach():
             "Ghanaian cuisine features dishes like jollof rice, fufu, and waakye.",
             "The Kwame Nkrumah Mausoleum in Accra is a memorial to Ghana's first president, Kwame Nkrumah.",
             "Ghana has a rich tradition of drumming and dance, including the popular dance form known as Azonto.",
-            "Dagbon Kingdom is the oldest kingdom in Ghana."
+            "The Kingdom of Dagbon is the oldest and one of the largest kingdoms in Ghana."
         ]
 
         while True:

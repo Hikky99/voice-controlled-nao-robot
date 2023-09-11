@@ -8,9 +8,9 @@ NAO_IP = "your_robot_ip_address"
 NAO_PORT = 9559
 
 # Replace this with the actual path to the "assets/songs" folder
-SONGS_FOLDER = "/path/to/assets/songs"
+SONGS_FOLDER = "assets/music"
 
-def song():
+def sing():
     try:
         # Initialize the Naoqi audio player proxy
         audio_player = ALProxy("ALAudioPlayer", NAO_IP, NAO_PORT)
@@ -19,7 +19,7 @@ def song():
         audio_files = [f for f in os.listdir(SONGS_FOLDER) if f.endswith((".mp3", ".wav"))]
 
         if not audio_files:
-            print("No songs found in the 'songs' folder.")
+            print("I cant sing at this time.")
             return
 
         # Select a random audio file
@@ -37,4 +37,4 @@ def song():
         print(f"Error: {str(e)}")
 
 if __name__ == "__main__":
-    song()
+    sing()
